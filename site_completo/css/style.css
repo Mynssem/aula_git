@@ -230,4 +230,106 @@
 	background: #252525;
 }
 
+.locais
+{
+	margin: 0 auto;
+}
+.locais-item::before, .locais-item::after
+{
+	content: '';
+	display: block;
+	clear: both;
+}
+.locais-item{
+	margin: 80px auto;
+	max-width: 820px;
+}
+.locais-item h2
+{
+	font-size: 2.25em;
+	clear: none;
+}
+.locais-item p
+{
+	font-size: 1.125em;
+	margin: 24px 0;
+}
+.locais-item img
+{
+	float: left;
+}
+.locais-item div
+{
+	width: 340px;
+	float: right;
+}
+.locais-item a
+{
+	display: block;
+	width: 150px;
+	text-transform: uppercase;
+	border: 3px solid #252525;
+	font-weight: 700;
+	font-size: 1.125em;
+	text-align: center;
+	text-decoration: none;
+	color: #252525;
+	padding: 10px 0;
+	transition: 0.4s background-color;
+}
+.locais-item a:hover
+{
+	color: white;
+	background: #252525;
+}
+.assine
+{
+	margin: 0 auto;
+	background: #E7E5D8;
+	height: 150px;
+}
+.assine-container
+{
+	max-width: 960px;
+	margin: 0 auto;
 
+}
+.assine-container form
+{
+	float: right;
+}
+.assine-container input
+{
+	padding: 1px 5px 3px 5px;
+	font-size: 1.6em;
+	color: #D6D4C8;
+	font-weight: 700;
+
+	
+
+}
+.assine-container label
+{
+	display: none;
+	color: #D6D4C8;
+}
+.assine-info
+{
+	float: left;
+	font-size: 1.125em;
+	color: #252525;
+}
+.assine-info h2
+{
+	font-size: 2em;
+}
+.footer
+{
+	height: 120px;
+	background: #D6D4C8;
+}
+.footer img
+{
+
+	float: right;
+}
