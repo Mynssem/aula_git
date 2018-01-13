@@ -1,0 +1,23 @@
+<h1>Nova Loja</h1>
+<br>
+<p><%= alert %></p>
+
+<%= form_for @store, url: :stores, method: :post do |form| %>
+  <% if @store.errors.any? && @store.errors[:adress] %>
+    <%= form.label "Endereço #{@store.errors[:adress].first}" %>
+  <% else %>
+    <%= form.label "Endereço" %>
+  <% end %>
+  <%= form.text_field :adress %>
+  <br>
+
+  <% if @store.errors.any? && @store.errors[:telephone] %>
+    <%= form.label "Telefone #{@store.errors[:telephone].first}" %>
+  <% else %>
+    <%= form.label "Telefone" %>
+  <% end %>
+  <%= form.number_field :telephone %>
+  <br>
+
+  <%= form.submit "Criar Loja" %>
+<% end %>
