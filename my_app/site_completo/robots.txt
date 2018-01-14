@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /portifolio
+Allow: /produtos
+Allow: /sobre
+Disallow: /contato
+Disallow: /saiba_mais
+Disallow: /ver_mapa
+

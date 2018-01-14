@@ -1,0 +1,65 @@
+<h1>Produtos</h1>
+<br>
+
+<!-- acesso à flash hash, ela usará notice em caso de sucesso e
+  alert em caso de falha-->
+<p><%= notice %></p>
+<p><%= alert %></p>
+<br>
+
+<!-- sintaxe padrão de formulário em Rails
+  @product deve estar definida em toda função de products_controller que renderizar esse arquivo,
+  no caso new e create -->
+<!-- admite classes css utilizando class: -->
+<%= form_for @product, url: :products, method: :post do |form| %>
+  <!-- checa se houveram erros de validação e exibe-os na tela em caso positivo -->
+  <% if @product.errors.any? && @product.errors[:name] %>
+    <!-- sintaxe para a tag html label -->
+    <!-- admite classes css utilizando class: -->
+    <%= form.label "Nome #{@product.errors[:name].first}" %>
+  <% else %>
+    <%= form.label "Nome" %>
+  <% end %>
+  <!-- sintaxe para a tag html input type=text -->
+  <!-- admite classes css utilizando class: -->
+  <%= form.text_field :name %>
+  <br>
+
+  <% if @product.errors.any? && @product.errors[:quantity] %>
+    <%= form.label "Quantidade #{@product.errors[:quantity].first}" %>
+  <% else %>
+    <%= form.label "Quantidade" %>
+  <% end %>
+  <!-- sintaxe para a tag html input type=number -->
+  <!-- admite classes css utilizando class: -->
+  <%= form.number_field :quantity %>
+  <br>
+
+  <% if @product.errors.any? && @product.errors[:validity] %>
+    <!-- sintaxe para a tag html label -->
+    <!-- admite classes css utilizando class: -->
+    <%= form.label "Validade #{@product.errors[:validity].first}" %>
+  <% else %>
+    <%= form.label "Validade" %>
+  <% end %>
+  <!-- sintaxe para a tag html input type=text -->
+  <!-- admite classes css utilizando class: -->
+  <%= form.text_field :validity %>
+  <br>
+
+  <% if @product.errors.any? && @product.errors[:provider] %>
+    <!-- sintaxe para a tag html label -->
+    <!-- admite classes css utilizando class: -->
+    <%= form.label "Fornecedor #{@product.errors[:provider].first}" %>
+  <% else %>
+    <%= form.label "Fornecedor" %>
+  <% end %>
+  <!-- sintaxe para a tag html input type=text -->
+  <!-- admite classes css utilizando class: -->
+  <%= form.text_field :provider %>
+  <br>
+
+  <!-- sintaxe para a tag html input type=submit -->
+  <!-- admite classes css utilizando class: -->
+  <%= form.submit "Adicionar produto" %>
+<% end %>

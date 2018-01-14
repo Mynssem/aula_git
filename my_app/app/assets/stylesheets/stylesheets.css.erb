@@ -1,0 +1,412 @@
+*,h1,h2,h3,h4,h5,h6,p,ul,img,div,li
+{
+	margin:0;
+	padding:0;
+}
+
+.menu
+{
+	background: #252525;
+}
+
+.menu a
+{
+	color:white;
+	text-decoration:none
+}
+
+.menu li
+{
+	list-style: none;
+}
+.menu-container
+{
+	max-width: 920px;
+	padding: 15px;
+	margin: 0 auto;
+}
+.menu-container::after, .menu-container::before
+{
+	display: table;
+	content:'';
+	clear:both;
+}
+
+.menu-nav
+{
+	float: right;
+}
+
+.menu-nav li
+{
+	display:inline-block;
+}
+.menu-nav li a
+{
+	padding: 15px;
+	display: block;
+}
+
+.intro
+{
+	padding: 150px 0px;
+	text-align: center;
+	color: white;
+	background: url(<%= asset_path "bg-intro.jpg" %>) no-repeat center center;
+	background-size:cover;	
+}
+.intro h1
+{
+	text-transform: uppercase;
+	font-size: 3em;
+}
+//.intro h1::after
+//{
+//	content:"-";
+//	display: block;
+//	color:white;
+//}
+
+.intro h1::after
+{
+	content:"";
+	display: block;
+	width:20px;
+	height: 4px;
+	background:#fff;
+	margin: 10px auto;
+	transition: 1s;
+}
+
+.intro h1:hover::after
+{
+	width: 300px;
+	
+}
+
+.intro p
+{
+	font-size: 1.25em;
+	font-style: italic;
+}
+
+.sobre
+{
+	padding: 60px 0px;
+}
+.sobre h2
+{
+	padding-bottom: 60px;
+	text-align: center;
+	font-size: 2.25em;
+}
+.sobre-container
+{
+	max-width: 960px;
+	margin: 0 auto;
+}
+.sobre-container::after,.sobre-container::before
+{
+	content:'';
+	display: table;
+	clear:both;
+}
+
+.sobre-item
+{
+	max-width: 460px;
+	float:left;
+	margin: 0 10px;
+}
+.sobre-item h3
+{
+	font-size: 2.25em;
+	background: #252525;
+	width: 220px;
+	color: white;
+	text-align: center;
+	font-weight: 400;
+	padding: 5px 0;
+	font-style: italic;
+	margin-top:-30px;
+	position: relative;
+}
+.sobre-item img
+{
+	
+}
+
+.sobre p
+{
+	font-size: 1.125em;
+	text-align: center;
+	font-style: italic;
+	line-height: 1.4em;
+	max-width: 460px;
+	margin: 20px auto;
+	//text-align: justify;
+}
+
+.produtos
+{
+	background: #e7e4d8;
+	padding: 60px 0;
+	border-top: 3px solid #d6d3c8;
+	border-bottom: 3px solid #d6d3c8;
+	
+}
+.produtos-container
+{
+	max-width:960px;
+	margin: 0 auto;
+}
+.produtos-item
+{
+	width: 300px;
+	
+	margin: 0px 8px;
+	display: inline-block;
+}
+.produtos-item h2
+{
+	text-align: center;
+	font-size: 2.25em;
+	margin-bottom: 20px;
+}
+
+.produtos-item p
+{
+	font-size: 0.875em;
+	line-height: 1.4em;
+}
+
+.produtos-item h2::before
+{
+	content:'';
+	display: block;
+	width: 100px;
+	height: 100px;
+	margin: 20px auto;
+	background: currentcolor;
+	border-radius: 50%;
+	border: 5px solid #e7e4d8;
+	box-shadow: 0 0 0 5px currentcolor;
+}
+
+.produtos-paulista::before
+{
+	color: #492901;
+}
+
+.produtos-carioca::before
+{
+	color: #c17139;
+}
+.produtos-mineiro::before
+{
+	color: #d7a54d;
+}
+
+
+.produtos-btn
+{
+	display: block;
+	width: 180px;
+	text-transform: uppercase;
+	border:3px solid #252525;
+	color: #252525;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 1.125em;
+	text-align: center;
+	padding: 20px 0px;
+	margin: 20px auto;
+	transition: 0.4s background-color;
+	
+}
+.produtos-btn:hover
+{
+	color: #e7e4d8;
+	background: #252525;
+}
+
+.locais
+{
+	margin: 0 auto;
+}
+.locais-item::before, .locais-item::after
+{
+	content: '';
+	display: block;
+	clear: both;
+}
+.locais-item{
+	margin: 80px auto;
+	max-width: 820px;
+}
+.locais-item h2
+{
+	font-size: 2.25em;
+	clear: none;
+}
+.locais-item p
+{
+	font-size: 1.125em;
+	margin: 24px 0;
+}
+.locais-item img
+{
+	float: left;
+}
+.locais-item div
+{
+	width: 340px;
+	float: right;
+}
+.locais-item a
+{
+	display: block;
+	width: 150px;
+	text-transform: uppercase;
+	border: 3px solid #252525;
+	font-weight: 700;
+	font-size: 1.125em;
+	text-align: center;
+	text-decoration: none;
+	color: #252525;
+	padding: 10px 0;
+	transition: 0.4s background-color;
+}
+.locais-item a:hover
+{
+	color: white;
+	background: #252525;
+}
+.assine::before, .assine::after
+{
+	display: table;
+	content:'';
+	clear: both;
+}
+.assine
+{
+	margin: 0 auto;
+	background: #E7E5D8;
+	height: 150px;
+}
+.assine-container
+{
+	display: block;
+	max-width: 940px;
+	margin: 30px auto;
+
+}
+.assine-container form
+{
+	float: right;
+	background: #252525;
+	border-bottom: 3px solid #252525;
+	border-left: 3px solid #252525; 
+	border-right: 3px solid #252525;
+}
+.assine-container input
+{
+	padding: 10px 40px 10px 40px;
+	font-size: 1.125em;
+	color: black;
+	
+	font-style: italic;
+	background: #E7E5D8;
+	border: none;
+	font-family: Georgia, serif;	
+
+}
+.assine-container label
+{
+	display: none;
+	
+}
+.assine-info
+{
+	float: left;
+	
+	color: #252525;
+}
+.assine-info h2
+{
+	font-size: 2.0em;
+	font-weight: 900;
+}
+.assine-info p
+{
+	font-size: 1.5em;
+}
+.assine-container button
+{
+	background-color: transparent;
+  	border:none;
+  	font-size: 1.3em;
+  	color: #E7E5D8;
+  	text-transform: uppercase;
+  	text-align: center;
+  	padding: 10px 20px;
+  	font-family: Georgia, serif;
+}
+.assine-container button:hover
+{
+	color: #252525;
+	background: #E7E5D8;
+}
+
+.footer::before, .footer::after
+{
+	display: table;
+	content:'';
+	clear: both;
+}
+
+.footer
+{
+	height: 120px;
+	background: #D6D4C8;
+	display: block;
+	margin: 0 auto;
+}
+
+.footer-container
+{
+	max-width: 940px;
+	margin: 40px auto;
+}
+.footer-container p
+{
+	float: left;
+	font-size: 1.12em;
+}
+.footer img
+{
+	float: right;
+}
+
+.contato
+{
+	color: white;
+}
+.contato h1
+{
+	
+	background: #D6D4C8;
+	
+}
+.contato h2
+{	
+	background: #D6D4C8;
+	border-bottom: 3px solid white;	
+}
+.joinus h1
+{
+	background: #D6D4C8;
+	color: white;
+	border-bottom: 3px solid white;	
+}
+

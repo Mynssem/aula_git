@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MyApp</title>
+    <%= csrf_meta_tags %>
+ 
+    <meta name="description" content="Com o crescimento da produtora Brasil Café foi feita a opção de adotar o nome Brafé para a cafeteria, investindo em uma imagem moderna, fundada em tradição, mantendo os valores de oferecer produtos de
+qualidade e uma experiência agradável.">
+    <meta name="robots" content="index, follow"/>
+    <meta name="keywords" content="Brafé, Brasil Café, café, cafeteria, Blends"/>	
+	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= render "layouts/header" %>
+    <%= yield %>
+    <%= render "layouts/footer" %>
+  </body>
+</html>
