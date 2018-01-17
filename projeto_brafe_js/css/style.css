@@ -93,6 +93,8 @@
 .sobre
 {
 	padding: 60px 0px;
+	display: none;
+	
 }
 .sobre h2
 {
@@ -233,6 +235,7 @@
 .locais
 {
 	margin: 0 auto;
+	display: none;
 }
 .locais-item::before, .locais-item::after
 {
@@ -386,4 +389,8 @@
 .footer img
 {
 	float: right;
+}
+
+.ativo{
+	display: block;
 }

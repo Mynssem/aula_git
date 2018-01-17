@@ -6,17 +6,31 @@ $('document').ready( function()
 	{
 		var dist = $(window).scrollTop();
 		if(dist>200)
-		{
-			
-			$('.sobre-item .amor').fadeIn();
-			$('.sobre-item .perfeicao').fadeIn();
+		{			
+			$('.sobre').fadeIn();
+					
 		}
 		else
 		{
 			
-			$('.sobre-item .amor').fadeOut();
-			$('.sobre-item .perfeicao').fadeOut();
+			$('.sobre').fadeOut();
+			
+
+	
 		}
+		if(dist>1100)
+		{			
+			
+			$('.locais').fadeIn();	
+					
+		}
+		else
+		{
+			
+			$('.locais').fadeOut();
+			
+		}
+		
 	});
 	
 		
