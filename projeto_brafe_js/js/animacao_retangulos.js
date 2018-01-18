@@ -1,37 +1,24 @@
-$('document').ready( function()
+$(document).ready( function()
 {
-	
-	
-	$(window).scroll( function()
+	$(window).scroll(function() 
 	{
-		var dist = $(window).scrollTop();
-		if(dist>200)
-		{			
-			$('.sobre').fadeIn();
-					
+		var windowTop = $(this).scrollTop();
+		if(windowTop > $('.sobre').offset().top - 300)
+		{
+			$('.sobre').addClass('aparecer');
 		}
 		else
 		{
-			
-			$('.sobre').fadeOut();
-			
+			$('.sobre').removeClass('aparecer');
+		}
 
-	
-		}
-		if(dist>1100)
-		{			
-			
-			$('.locais').fadeIn();	
-					
+		if(windowTop > $('.locais').offset().top - 300)
+		{
+			$('.locais').addClass('aparecer');
 		}
 		else
 		{
-			
-			$('.locais').fadeOut();
-			
+			$('.locais').removeClass('aparecer');
 		}
-		
 	});
-	
-		
 });
